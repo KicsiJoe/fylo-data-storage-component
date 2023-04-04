@@ -1,0 +1,19 @@
+@media screen and (min-width: 730px) {
+  body {
+    position: relative;
+    background-color: var(--very-dark-blue);
+  }
+
+  body::after {
+    content: "";
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-image: url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}

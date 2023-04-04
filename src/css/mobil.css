@@ -1,0 +1,44 @@
+@media screen and (max-width: 730px){
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../images/bg-mobile.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* object-fit: cover; */
+        overflow: hidden;
+    }
+
+    .flex-container-row.main {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .flex-container-row.left {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .progress-bar-keret p {
+        text-align: center;
+    }
+    .gb-left-bottom {
+        display: none;
+    }
+    .gb-left {
+        /* position: relative; */
+        position: absolute;
+        top: 55px;
+        border-bottom-right-radius: 10px;
+        width: 40%;
+        justify-content: center;
+        left: calc(50% - 74px);
+        padding: 15px;
+        font-size: 2em;
+    }
+    .progress-bar-keret {
+        padding-bottom: 40px;
+    }
+
+    
+}

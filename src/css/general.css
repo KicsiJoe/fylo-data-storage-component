@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+.logo {
+  width: 100%;
+  scale: 1;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.img-box {
+  display: block;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--very-dark-blue);
+}
+.img-box svg:not(.logo-svg) {
+  display: block;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+}
+
+.line {
+  width: calc(100% - 2px);
+  margin-left: 1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 10px;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 5px;
+}
+.line-background {
+  display: flex;
+  align-items: center;
+  height: 14px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: var(--very-dark-blue);
+}
+
+.circle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 1px;
+  right: 1px;
+  left: auto;
+  background-color: white;
+  border-radius: 333px;
+}
+
+.progress-bar-keret {
+  height: 50%;
+  border-radius: 10px;
+  width: max-content;
+  padding: 20px;
+  background-color: var(--dark-blue);
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container-column {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flex-container-column .flex-container-row {
+  gap: 10px;
+}
+
+.flex-container-row.left {
+  padding: 40px;
+  border-radius: 10px;
+  background-color: var(--dark-blue);
+  align-self: flex-end;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 10px;
+}
+
+.flex-container-row.left .curve {
+  width: 60px;
+  height: 100%;
+}
+
+.flex-container-row.space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8em;
+  color: var(--grayish-blue);
+  font-weight: 700;
+}
+
+.progress-bar-keret p {
+  font-size: 0.8em;
+  color: var(--grayish-blue);
+  font-weight: 500;
+}
+.progress-bar-keret p span {
+  font-weight: 500;
+  color: var(--pale-blue);
+}
+
+.flex-container-row.main .right {
+  width: 100%;
+}
+
+.progress-bar {
+  width: 100%;
+}
+.bar-box {
+    position: relative;
+  width: 320px;
+}
+
+.main {
+  align-items: end;
+  gap: 20px;
+}
+
+.gb-title div {
+  color: var(--pale-blue);
+}
+.gb-title {
+  margin-top: 10px;
+}
+
+#up {
+  padding-top: 13px;
+  padding-bottom: 3px;
+}
+
+.gb-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    padding: 10px;
+    background-color: white;
+    color: var(--very-dark-blue);
+    font-weight: 700;
+    font-size: 1.6em;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+}
+
+
+.gb-left span:nth-child(2) {
+    font-size: 10px;
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+}
+.gb-left-bottom {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+    position: absolute;
+    top: -60px;
+    right: 0;
+}
