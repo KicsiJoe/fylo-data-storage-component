@@ -1,7 +1,8 @@
 @media screen and (min-width: 730px) {
   body {
     position: relative;
-    background-color: var(--very-dark-blue);
+    /* background-color: var(--very-dark-blue); */
+    background-color: red;
   }
 
   body::after {
